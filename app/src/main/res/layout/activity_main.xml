@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="위치 입력 (좌표 또는 리전 인덱스)"
+        android:textColor="#000000"/>
+<!--        android:hintTextColor="#808080"/>-->
+
+    <Button
+        android:id="@+id/buttonScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="실행 (RSSI 측정 시작)"/>
+<!--        android:textColor="#000000"/>-->
+
+    <Button
+        android:id="@+id/buttonStopScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="중지 (WiFi 스캔 중지)" />
+
+    <Button
+        android:id="@+id/buttonExport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="내보내기 (CSV 공유)"/>
+<!--        android:textColor="#000000"/>-->
+
+    <Button
+        android:id="@+id/buttonView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="보기 (저장된 데이터 확인)"/>
+<!--        android:textColor="#000000"/>-->
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="상태 표시"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+</LinearLayout>
