@@ -108,7 +108,7 @@ class MainActivity : AppCompatActivity() {
                     scanCount++
                     if (scanCount < 30 && isScanning) {
                         textViewStatus.text = "측정 중 ${scanCount}/30"
-                        handler.postDelayed({ startWifiScan() }, 3000)
+                        handler.postDelayed({ startWifiScan() }, 10000)
                     } else if (scanCount >= 30) {
                         textViewStatus.text = "측정 완료"
                         showCompletionNotification()
